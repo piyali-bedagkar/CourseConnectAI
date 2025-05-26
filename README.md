@@ -13,6 +13,21 @@ CourseConnect AI provides interactive course exploration through:
 
 ---
 
+🎯 Business Context (EdTech Sector)
+
+**Customers:**  
+- Students  
+- Academic advisors  
+- University administrative staff  
+
+**Business Opportunities:**  
+- **Centralizing** academic planning data  
+- **Reducing** reliance on manual advising  
+- **Providing** analytical insights on student academic interests and course popularity  
+
+---
+
+
 🎯 Features
 
 - **Automated Data Parsing** from institutional PDFs.
@@ -35,26 +50,32 @@ CourseConnect AI provides interactive course exploration through:
 
 ---
 
-📁 Project Structure
+⚙️ Technical Implementation
 
-UMD_CourseConnect_Chatbot/
-│
-├── Project_Code/
-│ ├── data/
-│ ├── lib/
-│ ├── pages/
-│ ├── utils/
-│ │ ├── ui_utils.py
-│ │ ├── pdf_parser.py
-│ │ ├── graph_utils.py
-│ │ └── nlp.py
-│ ├── home.py
-│ ├── chatbot.py
-│ ├── knowledgegraph.py
-│ ├── about.py
-│ ├── requirements.txt
-│ └── structured_courses_from_pdf.txt
-│
-├── Presentation_503_Data_Analyst_1.pdf
-├── Presentation_and_ProductDemo.mp4
-└── Report_503_Data_Analyst_1.pdf
+### 1️⃣ Data Collection and Parsing:
+- Extracted unstructured course data from PDFs using **PyPDF2** (`pdf_parser.py`).
+- Transformed course data into structured text (Course ID, title, professor, time, description).
+
+### 2️⃣ NLP-Based Entity Extraction:
+- Leveraged transformer model (**dslim/bert-base-NER**) to parse structured course text into entities:
+  - Course Titles  
+  - Professors  
+  - Timings  
+  - Keywords (`nlp.py`)
+
+### 3️⃣ Knowledge Graph Construction:
+- Utilized **NetworkX** and **PyVis** to visualize course relationships in an interactive graph.
+- Integrated visualization into a **Streamlit** web application (`graph_utils.py`, `knowledgegraph.py`).
+
+### 4️⃣ Chatbot (LLM Integration):
+- Connected platform to **OpenRouter’s LLaMA 3 (8B)** API.
+- Implemented prompt-driven queries for dynamic responses to student questions (`chatbot.py`).
+
+### 5️⃣ User Interface (UI):
+- Developed using **Streamlit**, enhanced with custom **HTML/CSS** for seamless UX.
+- Features intuitive navigation, dedicated pages for Knowledge Graph & Chatbot (`home.py`, `ui_utils.py`).
+
+---
+
+## 📊 Data Flow:
+PDF → Text → Structured Course Blocks → Entity Triples → Graph (JSON) → LLM Context
