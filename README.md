@@ -4,7 +4,7 @@ A dynamic, AI-powered academic planning platform transforming static university 
 
 ---
 
-🚀 Overview
+## 🚀 Overview
 
 CourseConnect AI provides interactive course exploration through:
 
@@ -13,7 +13,7 @@ CourseConnect AI provides interactive course exploration through:
 
 ---
 
-🎯 Business Context (EdTech Sector)
+## 🎯 Business Context (EdTech Sector)
 
 **Customers:**  
 - Students  
@@ -27,8 +27,7 @@ CourseConnect AI provides interactive course exploration through:
 
 ---
 
-
-🎯 Features
+## 🎯 Features
 
 - **Automated Data Parsing** from institutional PDFs.
 - **Entity Extraction** using Transformers (BERT-based NER).
@@ -37,7 +36,7 @@ CourseConnect AI provides interactive course exploration through:
 
 ---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 | Category           | Tools/Frameworks                     |
 |--------------------|--------------------------------------|
@@ -50,7 +49,7 @@ CourseConnect AI provides interactive course exploration through:
 
 ---
 
-⚙️ Technical Implementation
+## ⚙️ Technical Implementation
 
 ### 1️⃣ Data Collection and Parsing:
 - Extracted unstructured course data from PDFs using **PyPDF2** (`pdf_parser.py`).
