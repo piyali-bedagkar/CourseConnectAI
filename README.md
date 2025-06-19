@@ -71,9 +71,14 @@ CourseConnect AI provides interactive course exploration through:
 - Utilized **NetworkX** and **PyVis** to visualize course relationships in an interactive graph.
 - Integrated visualization into a **Streamlit** web application (`graph_utils.py`, `knowledgegraph.py`).
 
+![image](https://github.com/user-attachments/assets/2c84bd74-6df0-4e32-ad90-903edb742dd1)
+![image](https://github.com/user-attachments/assets/5c85ec70-b528-4891-b6f1-b23c18e8069a)
+
 ### 4️⃣ Chatbot (LLM Integration):
 - Connected platform to **OpenRouter’s LLaMA 3 (8B)** API.
 - Implemented prompt-driven queries for dynamic responses to student questions (`chatbot.py`).
+
+![image](https://github.com/user-attachments/assets/3fccbf0a-cfd0-4e00-ac30-f3fbaa4c3f82)
 
 ### 5️⃣ User Interface (UI):
 - Developed using **Streamlit**, enhanced with custom **HTML/CSS** for seamless UX.
