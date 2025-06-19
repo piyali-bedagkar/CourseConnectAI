@@ -1,5 +1,5 @@
 # CourseConnect AI 
-###▶️ [Watch Demo Video](https://drive.google.com/file/d/13AsalUA6Q_Wvq3weQIiJvv_aazSv-OjN/view?usp=sharing)
+▶️ [Watch Demo Video](https://drive.google.com/file/d/13AsalUA6Q_Wvq3weQIiJvv_aazSv-OjN/view?usp=sharing)
 
 
 A dynamic, AI-powered academic planning platform transforming static university course catalogs into interactive tools. Built with NLP, Knowledge Graphs, and Large Language Models.
