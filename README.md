@@ -64,6 +64,9 @@ CourseConnect AI provides interactive course exploration through:
   - Timings  
   - Keywords (`nlp.py`)
 
+![image](https://github.com/user-attachments/assets/5033690b-8eee-4d65-9029-126a5c42ff35)
+
+
 ### 3️⃣ Knowledge Graph Construction:
 - Utilized **NetworkX** and **PyVis** to visualize course relationships in an interactive graph.
 - Integrated visualization into a **Streamlit** web application (`graph_utils.py`, `knowledgegraph.py`).
